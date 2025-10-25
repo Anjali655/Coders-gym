@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    /* This is where you put your theme customizations */
+    --container-padding-default: 1rem;
+    --container-padding-sm: 2rem;
+    --container-padding-lg: 4rem;
+    --container-padding-xl: 5rem;
+    --container-padding-2xl: 6rem;
+
+    /* --- Custom Colors --- */
+    /* Define a single color */
+    --color-primary: #ff8901;
+    --color-secondary: #fb923c;
+}
+
+
+@layer components {
+
+    /* This is where you would configure the container component */
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        /* This uses the new theme variables */
+        padding-left: var(--container-padding-default);
+        padding-right: var(--container-padding-default);
+    }
+
+
+
+
+}
