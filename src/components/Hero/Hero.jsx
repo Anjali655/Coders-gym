@@ -1,8 +1,31 @@
 import React from 'react'
+import { FaPlay } from 'react-icons/fa'
 
 const Hero = () => {
     return (
-        <div>Hero</div>
+        <>
+            <section>
+                <div className='container grid grid-cols-1 md:grid-cols-2 relative min-h-[650px]'>
+
+                    {/* Brand Info*/}
+                    <div className='flex flex-col justify-center py-14 md:py-0 font-playfair'>
+                        <div className='text-center md:text-left space-y-6'>
+                            <h1 className='text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-normal'>Gym gives you the perfect <span className='text-primary'>Health</span></h1>
+                            <p className='text-gray-600 xl:max-w-[500px]'>It's a long established fact that a reader will be readable content of a page when are the best product.
+                            </p>
+
+                            {/* button section */}
+                            <div className='flex justify-center items-center gap-8 md:justify-start mt-4'>
+                                <button className='primary-btn flex items-center gap-2 mt-4 cursor-pointer'>Order Now</button>
+                                <button className='flex justify-center gap-2 mt-4 items-center cursor-pointer shadow-md py-3 px-6 rounded-md hover:scale-110 duration-300'><FaPlay /> Watch Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Hero image */}
+                </div>
+            </section>
+        </>
     )
 }
 
