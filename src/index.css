@@ -35,3 +35,11 @@
     }
 
 }
+
+@layer utilities {
+
+    /* Custom utility classes can be added here */
+    .drop-shadow {
+        filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.2));
+    }
+}
